@@ -45,20 +45,14 @@ function replaceEmbedHtmlUrl($html, $url, $attr, $postId)
         return $html;
     }
 
-    // find the replaceable urls in html
-    $result = preg_match('/href="(.*?)"/', $html, $match);
-
-    if (!$result || !isset($match[1])) {
-        return $html;
-    }
-
-    $url = $match[1];
-
-    // generate the url
-    $frontendUrl = esc_url(get_permalink($postId));
-
+	if(!defined('ASSE_REPLACE_BACKEND_URL')) {
+		return;
+	}
+	
+	$originUrl = getenv("WP_ORIGIN");
+	
     // replace backend urls
-    $html = str_replace($url, $frontendUrl, $html);
+    $html = str_replace(ASSE_REPLACE_BACKEND_URL, $originUrl, $html);
 
     return $html;
 }

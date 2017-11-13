@@ -49,8 +49,8 @@ function replaceEmbedHtmlUrl($html, $url, $attr, $postId)
 		return;
 	}
 	
+	// get wp origin 
 	$originUrl = getenv("WP_ORIGIN");
-	
     // replace backend urls
     $html = str_replace(ASSE_REPLACE_BACKEND_URL, $originUrl, $html);
 

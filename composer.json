@@ -1,7 +1,7 @@
 {
-    "name": "muplugin/asse-filter-post",
+    "name": "axelspringer/asse-filter-post",
     "type": "wordpress-muplugin",
-    "description": "asse filter post",
+    "description": "axelspringer filter post",
     "keywords": [
         "wordpress",
         "muplugin"
@@ -10,11 +10,15 @@
         {
             "name": "Developer",
             "homepage": "http://www.axelspringer.de"
+        },
+        {
+            "name": "Mathias Witt",
+            "homepage": "http://www.axelspringer.de"
         }
     ],
-    "homepage": "https://as-stash.axelspringer.de/projects/WPMUP/repos/asse-filter-post/browse",
-    "license": "proprietary",
+    "homepage": "https://github.com/wp-mu-filter-post",
+    "license": "Apache-2.0",
     "extra": {
-        "installer-name": "asse-filter-post"
+        "installer-name": "wp-mu-filter-post"
     }
 }

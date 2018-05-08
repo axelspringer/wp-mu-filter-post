@@ -1,5 +1,5 @@
 {
-    "name": "axelspringer/asse-filter-post",
+    "name": "axelspringer/wp-mu-filter-post",
     "type": "wordpress-muplugin",
     "description": "axelspringer filter post",
     "keywords": [
